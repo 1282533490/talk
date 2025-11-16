@@ -79,7 +79,7 @@ register.addEventListener('click', async function (e) {
 
   if (result.data.code === 0) {
     alert('注册成功！')
-    location.href = '/聊天机器人/MySelf/login.html'
+    location.href = baseUrl + 'login.html'
 
   } else {
     alert(result.data.msg)
