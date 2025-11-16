@@ -69,7 +69,7 @@ login.addEventListener('click', async function (e) {
   localStorage.setItem('loginInfo', JSON.stringify(loginInfo))
   if (result.data.code === 0) {
     alert('登录成功！')
-    location.href = doMain + 'login.html'
+    location.href = doMain + 'index.html'
   } else {
     alert(result.data.msg)
   }
