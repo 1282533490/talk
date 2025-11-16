@@ -10,7 +10,7 @@ async function init() {
   const result = await verifyLoginInfo()
   if (result.code !== 0) {
     alert(result.msg)
-    location.href = '/聊天机器人/MySelf/login.html'
+    location.href = '/login.html'
     return
   }
   nickname.innerText = result.data.nickname
@@ -89,7 +89,7 @@ async function sendChatInfo() {
   })
   if (result.data.code !== 0) {
     alert(result.data.msg)
-    location.href = '/聊天机器人/MySelf/login.html'
+    location.href = '/login.html'
     return
   }
   const date = parseTimeStamp(new Date())
@@ -123,7 +123,7 @@ button.addEventListener('click', function (e) {
 })
 
 close.addEventListener('click', function () {
-  location.href = '/聊天机器人/MySelf/login.html'
+  location.href = '/login.html'
   localStorage.removeItem('loginInfo')
 })
 
